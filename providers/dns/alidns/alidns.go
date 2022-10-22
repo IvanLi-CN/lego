@@ -273,5 +273,5 @@ func extractRecordName(fqdn, zone string) (string, error) {
 	if idx := strings.Index(name, "."+asciiDomain); idx != -1 {
 		return name[:idx], nil
 	}
-	return name, nil
+	return "@", nil
 }
